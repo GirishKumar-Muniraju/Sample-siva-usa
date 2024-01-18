@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  wrs-user-feedback: #Update, as necessary.
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile
+      args: # Environment variables available at build-time
+        - http_proxy=http://EVAPzen.fpl.com:10262
+        - https_proxy=http://EVAPzen.fpl.com:10262
+        - no_proxy=localhost,127.0.0.*
+    environment: # Environment variables available at container run-time  ...
+      - https_proxy=http://EVAPzen.fpl.com:10262
+      - http_proxy=http://EVAPzen.fpl.com:10262
+      - no_proxy=localhost,127.0.0.*
+    volumes:
+      - ./:${PWD}
+    command: "tail -f /dev/null"

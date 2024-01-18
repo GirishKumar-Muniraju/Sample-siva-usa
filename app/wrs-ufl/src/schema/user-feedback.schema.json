@@ -1,0 +1,308 @@
+{
+    "required": [
+        "wrNumber",
+        "facility",
+        "uCode",
+        "workAgainstCode",
+        "troubleBrkdwn",
+        "opsReview",
+        "equipGroupType",
+        "equipClass",
+        "nucApplicableMode",
+        "fid",
+        "spv",
+        "mrule",
+        "ist",
+        "cda",
+        "safeSd",
+        "ePlan",
+        "fireProt",
+        "fireProt2",
+        "apprFire",
+        "flex",
+        "licRenew",
+        "equipBin",
+        "targetOutageInd",
+        "targetPriority",
+        "eCode",
+        "equipmentNumber",
+        "equipmentName",
+        "equipmentType",
+        "systemCode",
+        "locationDesc",
+        "description",
+        "detailedDescription",
+        "eCodeOutageYes",
+        "eCodeOutageNo",
+        "equipTypeOutageYes",
+        "equipTypeOutageNo",
+        "equipGroupIdOutageYes",
+        "equipGroupIdOutageNo",
+        "eCodeTrblBrkYes",
+        "eCodeTrblBrkNo",
+        "eCodeAverageTrblBrk12Mo",
+        "eCodeMaxTrblBrk12Mo",
+        "eCodeMinTrblBrk12Mo",
+        "modelName",
+        "modelVersion",
+        "modelRecommendation",
+        "modelProbability",
+        "userDecision",
+        "slid"
+    ],
+    "additionalProperties": false, 
+    "type": "object",
+    "properties": {
+        "wrNumber": {
+            "type": "string"
+        },
+        "facility": {
+            "type": "string"
+        },
+        "uCode": {
+            "type": "string"
+        },
+        "workAgainstCode": {
+            "type": "string"
+        },
+        "troubleBrkdwn": {
+            "type": "string"
+        },
+        "opsReview": {
+            "type": "string"
+        },
+        "equipGroupType": {
+            "type": "string"
+        },
+        "equipClass": {
+            "type": "string"
+        },
+        "nucApplicableMode": {
+            "type": "string"
+        },
+        "fid": {
+            "type": "string"
+        },
+        "spv": {
+            "type": "string"
+        },
+        "mrule": {
+            "type": "string"
+        },
+        "ist": {
+            "type": "string"
+        },
+        "cda": {
+            "type": "string"
+        },
+        "safeSd": {
+            "type": "string"
+        },
+        "ePlan": {
+            "type": "string"
+        },
+        "fireProt": {
+            "type": "string"
+        },
+        "fireProt2": {
+            "type": "string"
+        },
+        "apprFire": {
+            "type": "string"
+        },
+        "flex": {
+            "type": "string"
+        },
+        "licRenew": {
+            "type": "string"
+        },
+        "equipBin": {
+            "type": "string"
+        },
+        "targetOutageInd": {
+            "type": "string"
+        },
+        "targetPriority": {
+            "type": "string"
+        },
+        "eCode": {
+            "type": "string"
+        },
+        "equipmentNumber": {
+            "type": "string"
+        },
+        "equipmentName": {
+            "type": "string"
+        },
+        "equipmentType": {
+            "type": "string"
+        },
+        "systemCode": {
+            "type": "string"
+        },
+        "locationDesc": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "detailedDescription": {
+            "type": "string"
+        },
+        "eCodeOutageYes": {
+            "type": "string"
+        },
+        "eCodeOutageNo": {
+            "type": "string"
+        },
+        "equipTypeOutageYes": {
+            "type": "string"
+        },
+        "equipTypeOutageNo": {
+            "type": "string"
+        },
+        "equipGroupIdOutageYes": {
+            "type": "string"
+        },
+        "equipGroupIdOutageNo": {
+            "type": "string"
+        },
+        "eCodeTrblBrkYes": {
+            "type": "string"
+        },
+        "eCodeTrblBrkNo": {
+            "type": "string"
+        },
+        "eCodeAverageTrblBrk12Mo": {
+            "type": "string"
+        },
+        "eCodeMaxTrblBrk12Mo": {
+            "type": "string"
+        },
+        "eCodeMinTrblBrk12Mo": {
+            "type": "string"
+        },
+        "modelName": {
+            "type": "string"
+        },
+        "modelVersion": {
+            "type": "string"
+        },
+        "modelRecommendation": {
+            "type": "string"
+        },
+        "modelProbability": {
+            "type": "string"
+        },
+        "userDecision": {
+            "type": "string"
+        },
+        "slid": {
+            "type": "string"
+        }
+    },
+    "errorMessage": {
+        "required": {
+            "wrNumber": "wrNumber is required",
+            "facility": "facility is required",
+            "uCode": "uCode is required",
+            "workAgainstCode": "workAgainstCode is required",
+            "troubleBrkdwn": "troubleBrkdwn is required",
+            "opsReview": "opsReview is required",
+            "equipGroupType": "equipGroupType is required",
+            "equipClass": "equipClass is required",
+            "nucApplicableMode": "nucApplicableMode is required",
+            "fid": "fid is required",
+            "spv": "spv is required",
+            "mrule": "mrule is required",
+            "ist": "ist is required",
+            "cda": "cda is required",
+            "safeSd": "safeSd is required",
+            "ePlan": "ePlan is required",
+            "fireProt": "fireProt is required",
+            "fireProt2": "fireProt2 is required",
+            "apprFire": "apprFire is required",
+            "flex": "flex is required",
+            "licRenew": "licRenew is required",
+            "equipBin": "equipBin is required",
+            "targetOutageInd": "targetOutageInd is required",
+            "targetPriority": "targetPriority is required",
+            "eCode": "eCode is required",
+            "equipmentNumber": "equipmentNumber is required",
+            "equipmentName": "equipmentName is required",
+            "equipmentType": "equipmentType is required",
+            "systemCode": "systemCode is required",
+            "locationDesc": "locationDesc is required",
+            "description": "description is required",
+            "detailedDescription": "detailedDescription is required",
+            "eCodeOutageYes": "eCodeOutageYes is required",
+            "eCodeOutageNo": "eCodeOutageNo is required",
+            "equipTypeOutageYes": "equipTypeOutageYes is required",
+            "equipTypeOutageNo": "equipTypeOutageNo is required",
+            "equipGroupIdOutageYes": "equipGroupIdOutageYes is required",
+            "equipGroupIdOutageNo": "equipGroupIdOutageNo is required",
+            "eCodeTrblBrkYes": "eCodeTrblBrkYes is required",
+            "eCodeTrblBrkNo": "eCodeTrblBrkNo is required",
+            "eCodeAverageTrblBrk12Mo": "eCodeAverageTrblBrk12Mo is required",
+            "eCodeMaxTrblBrk12Mo": "eCodeMaxTrblBrk12Mo is required",
+            "eCodeMinTrblBrk12Mo": "eCodeMinTrblBrk12Mo is required",
+            "modelName": "modelName is required",
+            "modelVersion": "modelVersion is required",
+            "modelRecommendation": "modelRecommendation is required",
+            "modelProbability": "modelProbability is required",
+            "userDecision": "userDecision is required",
+            "slid": "slid is required"
+        },
+        "properties": {
+            "wrNumber": "wrNumber must be string",
+            "facility": "facility must be string",
+            "uCode": "uCode must be string",
+            "workAgainstCode": "workAgainstCode must be string",
+            "troubleBrkdwn": "troubleBrkdwn must be string",
+            "opsReview": "opsReview must be string",
+            "equipGroupType": "equipGroupType must be string",
+            "equipClass": "equipClass must be string",
+            "nucApplicableMode": "nucApplicableMode must be string",
+            "fid": "fid must be string",
+            "spv": "spv must be string",
+            "mrule": "mrule must be string",
+            "ist": "ist must be string",
+            "cda": "cda must be string",
+            "safeSd": "safeSd must be string",
+            "ePlan": "ePlan must be string",
+            "fireProt": "fireProt must be string",
+            "fireProt2": "fireProt2 must be string",
+            "apprFire": "apprFire must be string",
+            "flex": "flex must be string",
+            "licRenew": "licRenew must be string",
+            "equipBin": "equipBin must be string",
+            "targetOutageInd": "targetOutageInd must be string",
+            "targetPriority": "targetPriority must be string",
+            "eCode": "eCode must be string",
+            "equipmentNumber": "equipmentNumber must be string",
+            "equipmentName": "equipmentName must be string",
+            "equipmentType": "equipmentType must be string",
+            "systemCode": "systemCode must be string",
+            "locationDesc": "locationDesc must be string",
+            "description": "description must be string",
+            "detailedDescription": "detailedDescription must be string",
+            "eCodeOutageYes": "eCodeOutageYes must be string",
+            "eCodeOutageNo": "eCodeOutageNo must be string",
+            "equipTypeOutageYes": "equipTypeOutageYes must be string",
+            "equipTypeOutageNo": "equipTypeOutageNo must be string",
+            "equipGroupIdOutageYes": "equipGroupIdOutageYes must be string",
+            "equipGroupIdOutageNo": "equipGroupIdOutageNo must be string",
+            "eCodeTrblBrkYes": "eCodeTrblBrkYes must be string",
+            "eCodeTrblBrkNo": "eCodeTrblBrkNo must be string",
+            "eCodeAverageTrblBrk12Mo": "eCodeAverageTrblBrk12Mo must be string",
+            "eCodeMaxTrblBrk12Mo": "eCodeMaxTrblBrk12Mo must be string",
+            "eCodeMinTrblBrk12Mo": "eCodeMinTrblBrk12Mo must be string",
+            "modelName": "modelName must be string",
+            "modelVersion": "modelVersion must be string",
+            "modelRecommendation": "modelRecommendation must be string",
+            "modelProbability": "modelProbability must be string",
+            "userDecision": "userDecision must be string",
+            "slid": "slid must be string"
+        }
+    }
+}

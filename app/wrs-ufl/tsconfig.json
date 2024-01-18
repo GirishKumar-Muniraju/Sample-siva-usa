@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "ES2015"
+    ],
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "strict": true,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "strictNullChecks": false,
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/schema/*.json"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "test/**/*.spec.ts"
+  ]
+}

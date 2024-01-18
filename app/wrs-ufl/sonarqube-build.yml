@@ -1,0 +1,33 @@
+name: SonarQube Build
+on:
+  push:
+    branches: 
+      - dev
+  pull_request:
+    branches:
+      - feature*
+    types: [opened, edited, synchronize, reopened]
+jobs:
+  build:
+    runs-on:
+    # for python only, uncomment the lines below and update python version
+    #container:
+      #image: python:3.7
+    env:
+      HTTP_PROXY: 'http://evapzen.fpl.com:10262'
+      HTTPS_PROXY: 'http://evapzen.fpl.com:10262'
+      NO_PROXY: 'nexus.nee.com,localhost,127.0.0.1,.neer-bitbucket,169.254.169.254,*.fpl.com,*.nee.com,*.nexteraenergy.com,*.neeaws.local,vault.fpl.com'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - run: npm install --production
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
