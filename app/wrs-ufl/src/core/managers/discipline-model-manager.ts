@@ -1,5 +1,5 @@
 import { Logger } from '../../utils/logger';
-import { IStoreUserFeedbackPayload } from '../interfaces/store-user-feedback-payload.interface';
+import { IStoreUserFeedbackPayload } from '../interfaces/neo-release-info.interface';
 import { Discipline } from '../typeorm/entities/wrs-discipline.entity';
 import { UserFeedbackDao } from './../typeorm/user-feedback-dao';
 import { UserFeedbackManager } from './_user-feedback-manager.interface';

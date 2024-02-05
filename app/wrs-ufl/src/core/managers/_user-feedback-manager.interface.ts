@@ -1,5 +1,5 @@
-import { IStoreUserFeedbackPayload } from '../interfaces/store-user-feedback-payload.interface';
+import { INeoReleaseInfo } from '../interfaces/neo-release-info.interface';
 
-export interface UserFeedbackManager {
-    storeFeedback(payload: IStoreUserFeedbackPayload): Promise<any>;
+export interface NeoReleaseInfoManager {
+    storeFeedback(payload: INeoReleaseInfo): Promise<any>;
 }

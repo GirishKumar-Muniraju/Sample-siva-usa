@@ -1,4 +1,4 @@
-import { IStoreUserFeedbackPayload } from '../interfaces/store-user-feedback-payload.interface';
+import { IStoreUserFeedbackPayload } from '../interfaces/neo-release-info.interface';
 import { Outage } from '../typeorm/entities/wrs-outage.entity';
 import { UserFeedbackDao } from '../typeorm/user-feedback-dao';
 import { Logger } from '../../utils/logger';

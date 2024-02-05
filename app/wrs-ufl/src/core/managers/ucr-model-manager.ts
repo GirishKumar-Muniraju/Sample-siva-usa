@@ -1,6 +1,6 @@
 import { UCR } from './../typeorm/entities/wrs-urc.entity';
 import { UserFeedbackDao } from './../typeorm/user-feedback-dao';
-import { IStoreUserFeedbackPayload } from '../interfaces/store-user-feedback-payload.interface';
+import { IStoreUserFeedbackPayload } from '../interfaces/neo-release-info.interface';
 import { Logger } from '../../utils/logger';
 import { UserFeedbackManager } from './_user-feedback-manager.interface';
 import { v4 as uuidv4 } from 'uuid';

@@ -1,25 +1,25 @@
 import { v4 as uuidv4 } from 'uuid';
 import { Logger } from '../../utils/logger';
-import { IStoreUserFeedbackPayload } from '../interfaces/store-user-feedback-payload.interface';
+import { INeoReleaseInfo } from '../interfaces/neo-release-info.interface';
 import { Priority } from '../typeorm/entities/wrs-priority.entity';
-import { UserFeedbackDao } from '../typeorm/user-feedback-dao';
-import { UserFeedbackManager } from './_user-feedback-manager.interface';
+import { NeoReleaseInfoDao } from 'core/typeorm/user-feedback-dao';
+import { NeoReleaseInfoManager } from './_user-feedback-manager.interface';
 
-export class PriorityUserFeedbackManager implements UserFeedbackManager {
-    userFeedbackDao: UserFeedbackDao<Priority>;
+export class PriorityUserFeedbackManager implements NeoReleaseInfoManager {
+    userFeedbackDao: NeoReleaseInfoDao<NeoReleaseInfo>;
 
     constructor() {
-        this.userFeedbackDao = new UserFeedbackDao(Priority);
+        this.userFeedbackDao = new NeoReleaseInfoDao(Priority);
     }
 
-    async storeFeedback(userFeedback: IStoreUserFeedbackPayload): Promise<any> {
+    async storeFeedback(newReleaseInfo: INeoReleaseInfo): Promise<any> {
         try {
 
             const input = {
-                ...userFeedback,
+                ...newReleaseInfo,
                 id: uuidv4(),
-                updateUserId: userFeedback.slid,
-                createUserId: userFeedback.slid,
+                updateUserId: newReleaseInfo.updateUserId,
+                createUserId: newReleaseInfo.createdUserId,
                 createDateTime: new Date(),
                 updateDateTime: new Date(),
             };

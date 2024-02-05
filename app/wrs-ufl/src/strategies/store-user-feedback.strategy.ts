@@ -1,6 +1,6 @@
 import { ValidationHelper } from '../utils/validation-helper';
 import { ALBEvent, ALBResult } from 'aws-lambda';
-import { IStoreUserFeedbackPayload } from '../core/interfaces/store-user-feedback-payload.interface';
+import { IStoreUserFeedbackPayload } from '../core/interfaces/neo-release-info.interface';
 import { ErrorHandlingHelper } from '../utils/error-handling-helper';
 import { LambdaResponseHelper } from '../utils/lambda-response-helper';
 import { UserFeedbackManager } from '../core/managers/_user-feedback-manager.interface';

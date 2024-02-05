@@ -4,7 +4,7 @@ import { ApiError } from '../../models/api-error';
 import { Logger } from '../../utils/logger';
 import { DaoConnectionManager } from './dao-connection-manager';
 
-export class UserFeedbackDao<T> {
+export class NeoReleaseInfoDao<T> {
     private entityTarget: EntityTarget<T>;
 
     constructor(entity: EntityTarget<T>) {

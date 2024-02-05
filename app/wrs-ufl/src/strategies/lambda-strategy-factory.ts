@@ -43,7 +43,7 @@ export class LambdaStrategyFactory {
         const POST_PREFIX = `POST ${config.endpointPrefix}`;
         const OPTIONS_PREFIX = `OPTIONS ${config.endpointPrefix}`;
 
-        this.pathVsStrategyMap.set(`${POST_PREFIX}/outage`, () => new StoreStrategy(new OutageUserFeedbackManager()));
+        this.pathVsStrategyMap.set(`${POST_PREFIX}/getDetails`, () => new StoreStrategy(new OutageUserFeedbackManager()));
         this.pathVsStrategyMap.set(`${OPTIONS_PREFIX}/outage`, () => new CorsResponse());
 
         this.pathVsStrategyMap.set(`${POST_PREFIX}/priority`, () => new StoreStrategy(new PriorityUserFeedbackManager()));
